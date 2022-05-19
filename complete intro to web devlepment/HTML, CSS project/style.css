@@ -1,0 +1,79 @@
+*{
+	box-sizing: border-box;
+}
+main{
+	text-align: center;
+	line-height: 1.5;
+}
+
+h1{
+	margin: 60px 0;
+	text-align: center;
+	font-size: 60px;
+	font-family: "Snell Roundhand";
+}
+h2{
+	font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+    font-style: italic;
+}
+.row{
+	display: flex;
+	border-left: solid 1px;
+	border-bottom: solid 3px;
+}
+.story{
+	border-top: 1px solid;
+	border-right: 1px solid;
+    padding: 0 10px;	
+}
+.quarter{
+	width: 25%;
+}
+.half{
+	width: 50%;
+}
+.three-quarter{
+	width:  75%;
+}
+.other-sections{
+	display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.section-link {
+	display: flex;
+	align-items: center;
+	text-align: start;
+    padding-left: 30px;
+    font-size: 30px;
+	text-decoration: none;
+    font-weight: bold;
+    font-family: "Futura";
+    color: #666;
+	flex: 1;
+}
+
+.section-link:nth-child(1) {
+    background-color: #ffeaa7;
+}
+.section-link:nth-child(2){
+	background-color: #81ecec;
+}
+.section-link:nth-child(3){
+	background-color: #55efc4;
+}
+.section-link:nth-child(4){
+	background-color: #74b9ff;
+}
+.section-link:nth-child(5){
+	background-color: #a29bfe;
+}
+
+.section-link:hover{
+	text-decoration: underline;
+}
