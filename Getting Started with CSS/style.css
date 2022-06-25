@@ -1,0 +1,101 @@
+:root{
+    --black: #1E2335;
+    --red3: #3A4766;
+    --red2: #E6DFC5;
+    --red1: #83B0B5;
+    --red: #E25345;
+    --font-size: 1.3em;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--sans);
+    background-color: var(--black);
+}
+h1,h2{
+    margin: 0px;
+}
+button{
+    all: unset;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    background-color: var(--red);
+    border-radius: 5px;
+}
+button:hover{
+    color:  var(--black);
+    background-color: var(--red2);
+}
+.intro{
+    margin: 0;
+    color: white;
+}
+.name{
+    font-family: var(--mono);
+}
+.name span{
+    display: block;
+    color: var(--red1);
+    font-size: 3rem;
+}
+.intro h2{
+    color: var(--red2);
+    font-size: 5rem;
+}
+.intro p{
+    line-height: 1.5;
+}
+.intro a{
+    color: var(--red); 
+    text-decoration: none;
+}
+.intro a:hover{
+    color: var(--red2);
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: var(--red1);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+#contact h2{
+    font-size: 2rem; 
+}
+nav{
+    font-size: 1.2rem;
+    font-family: var(--mono);
+    padding: 1rem;
+}
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.nav li:first-child{
+    flex-basis: 100%;
+    text-align: center;
+    font-family: var(--sans);
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.nav a:hover{
+    color: var(--red2);
+}
