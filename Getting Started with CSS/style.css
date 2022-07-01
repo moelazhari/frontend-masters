@@ -14,29 +14,45 @@ html{
 body{
     margin: 0;
     padding: 0;
+    color: white;
     font-family: var(--sans);
     background-color: var(--black);
 }
 h1,h2{
     margin: 0px;
 }
-button{
-    all: unset;
-    font-size: 1.3rem;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    background-color: var(--red);
-    border-radius: 5px;
+nav{
+    font-size: 1.2rem;
+    font-family: var(--mono);
+    padding: 1rem;
 }
-button:hover{
-    color:  var(--black);
-    background-color: var(--red2);
-}
-.intro{
+.nav{
+    list-style-type: none;
     margin: 0;
-    color: white;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
+.nav h1 a{
+    color: var(--red);
+}
+.nav li:first-child{
+    flex-basis: 100%;
+    text-align: center;
+    font-family: var(--sans);
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.nav a:hover{
+    color: var(--red2);
+}
+
 .name{
     font-family: var(--mono);
 }
@@ -63,39 +79,43 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
     background-color: var(--red1);
+    border-top: 5px solid var(--red2);
     text-align: center;
     padding: 1.5rem 0;
 }
 #contact h2{
     font-size: 2rem; 
 }
-nav{
-    font-size: 1.2rem;
-    font-family: var(--mono);
-    padding: 1rem;
-}
-.nav{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+footer{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    background-color: var(--red);
+    border-top: 5px solid var(--red2);
+    padding: 1.5rem 0;
+}
+a.button{
+    all: unset;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 10px;
+    background-color: var(--red);
+    border-radius: 5px;
+}
+a.button:hover{
+    color: var(--black);
+    background-color: var(--red2);
+}
+
+@media (min-width: 850px){
+nav{
+    max-width: 2000px;
+    margin: 0 auto;
 }
 .nav li:first-child{
-    flex-basis: 100%;
-    text-align: center;
-    font-family: var(--sans);
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
 }
-.nav a{
-    color: white;
-    text-decoration: none;
-    display: block;
-}
-.nav a:hover{
-    color: var(--red2);
 }
