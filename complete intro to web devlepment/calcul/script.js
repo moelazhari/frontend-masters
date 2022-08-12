@@ -3,7 +3,7 @@ let   buff = "0";
 let   operator = null;
 let   pval = 0;
 const buttons = document.querySelectorAll(".calc-button");
-const disbly = document.querySelector(".disbly"); 
+const disbly = document.querySelector(".disbly");
 
 for(let i = 0; i < buttons.length; i++)
     buttons[i].addEventListener("click", function(event){
@@ -52,28 +52,45 @@ function handleSymbol(value){
             break;
          case '+':
             if (operator)
-                return;
+            {
+                calcul(parseInt(buff));
+                pval = ret;
+                ret = 0;
+            }
             pval = parseInt(buff);
             buff = "0";
             operator = '+';
             break;
         case '-':
             if (operator)
-                return;
-            pval = parseInt(buff);
+            {
+                calcul(parseInt(buff));
+                pval = ret;
+                ret = 0;
+            }
+            else
+                pval = parseInt(buff);
             buff = "0";
             operator = '-';
             break;
         case '×':
             if (operator)
-                return;
+            {
+                calcul(parseInt(buff));
+                pval = ret;
+                ret = 0;
+            }
             pval = parseInt(buff);
             buff = "0";
             operator = '×';
             break;
         case '÷':
             if (operator)
-                return;
+            {
+                calcul(parseInt(buff));
+                pval = ret;
+                ret = 0;
+            }
             pval = parseInt(buff);
             buff = "0";
             operator = '÷';

@@ -95,6 +95,13 @@ footer{
     border-top: 5px solid var(--red2);
     padding: 1.5rem 0;
 }
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
 a.button{
     all: unset;
     font-size: 1.3rem;
@@ -107,6 +114,8 @@ a.button:hover{
     color: var(--black);
     background-color: var(--red2);
 }
+
+
 
 @media (min-width: 850px){
 nav{
