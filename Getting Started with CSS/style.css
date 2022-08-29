@@ -16,15 +16,15 @@ body{
     padding: 0;
     color: white;
     font-family: var(--sans);
+    font-size: var(--font-size);
     background-color: var(--black);
 }
 h1,h2{
     margin: 0px;
 }
 nav{
-    font-size: 1.2rem;
     font-family: var(--mono);
-    padding: 1rem;
+    padding: 4rem 1rem;
 }
 .nav{
     list-style-type: none;
@@ -52,7 +52,11 @@ nav{
 .nav a:hover{
     color: var(--red2);
 }
-
+.intro{
+    padding: 4rem 1rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .name{
     font-family: var(--mono);
 }
@@ -115,11 +119,9 @@ a.button:hover{
     background-color: var(--red2);
 }
 
-
-
 @media (min-width: 850px){
 nav{
-    max-width: 2000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .nav li:first-child{
